@@ -26,6 +26,9 @@ from fastapi.responses import StreamingResponse
 from backend.rag import format_context, format_sources, store
 from backend.llm import stream_answer
 
+from fastapi.staticfiles import StaticFiles
+from fastapi.responses import FileResponse
+
 load_dotenv()
 log = logging.getLogger(__name__)
 
@@ -49,7 +52,7 @@ app = FastAPI(
     version="2.0.0",
     lifespan=lifespan,
 )
-
+app.mount("/static", StaticFiles(directory="frontend"), name="static")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -59,6 +62,10 @@ app.add_middleware(
 
 
 # ── Routes ────────────────────────────────────────────────────────────────────
+
+@app.get("/ui")
+async def serve_ui():
+    return FileResponse("frontend/index.html")
 
 @app.get("/")
 async def root():
