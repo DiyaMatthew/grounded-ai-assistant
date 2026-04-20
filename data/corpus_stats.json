@@ -1,0 +1,8 @@
+{
+  "total_chunks": 10,
+  "by_source": {
+    "uk_gov": 10
+  },
+  "avg_chunk_words": 333,
+  "total_words": 3336
+}

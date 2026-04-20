@@ -1,0 +1,17 @@
+# Exclude local dev files
+.env
+.venv
+__pycache__
+*.pyc
+*.pyo
+.DS_Store
+.git
+
+# Exclude raw source corpora (built corpus.json is kept)
+data/arxiv_corpus.json
+data/gov_corpus.json
+data/corpus_stats.json
+
+# Exclude notebook artefacts
+*.ipynb
+.ipynb_checkpoints

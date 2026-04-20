@@ -1,0 +1,16 @@
+[phases.setup]
+nixPkgs = ["python311", "gcc", "libstdcxx5"]
+
+[phases.install]
+cmds = [
+  "pip install --upgrade pip",
+  "pip install -r requirements.txt"
+]
+
+[phases.build]
+cmds = [
+  "python data/build_corpus.py"
+]
+
+[start]
+cmd = "uvicorn backend.app:app --host 0.0.0.0 --port $PORT"
