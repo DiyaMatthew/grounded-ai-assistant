@@ -108,7 +108,7 @@ Question: {query}"""
 
     try:
         stream = await client.chat.completions.create(
-            model="llama-3.1-8b-instant",
+            model="llama-3.3-70b-versatile",
             messages=messages,
             temperature=0.15,       # low = more factual, less creative
             max_tokens=600,
