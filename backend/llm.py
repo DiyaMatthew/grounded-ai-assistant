@@ -110,7 +110,7 @@ Question: {query}"""
 
     try:
         stream = await client.chat.completions.create(
-            model="google/gemma-3-27b-it:free",
+            model="google/gemma-4-31b-it:free",
             messages=messages,
             temperature=0.15,
             max_tokens=600,
