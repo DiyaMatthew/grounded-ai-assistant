@@ -181,7 +181,7 @@ grounded-ai-assistant/
 
 ## 👩‍💻 Author
 
-**Diya Mathew** — AI Engineer  
+**Diya Mathew**   
 [GitHub](https://github.com/DiyaMatthew) · [LinkedIn](https://www.linkedin.com/in/diya-mathew/)
 
 ---
