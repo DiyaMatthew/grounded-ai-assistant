@@ -30,15 +30,15 @@ _client: AsyncOpenAI | None = None
 def _get_client() -> AsyncOpenAI:
     global _client
     if _client is None:
-        api_key = os.environ.get("TOGETHER_API_KEY")
+        api_key = os.environ.get("OPENROUTER_API_KEY")
         if not api_key:
             raise EnvironmentError(
-                "TOGETHER_API_KEY not set. "
+                "OPENROUTER_API_KEY not set... "
                 "Add it to your .env file locally and Railway Variables in production."
             )
         _client = AsyncOpenAI(
             api_key=api_key,
-            base_url="https://api.together.xyz/v1",
+            base_url="https://openrouter.ai/api/v1",
         )
     return _client
 
@@ -110,7 +110,7 @@ Question: {query}"""
 
     try:
         stream = await client.chat.completions.create(
-            model="meta-llama/Llama-3-70b-chat-hf",
+            model="meta-llama/llama-3.1-8b-instruct:free",
             messages=messages,
             temperature=0.15,
             max_tokens=600,
