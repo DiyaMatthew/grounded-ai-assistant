@@ -19,7 +19,7 @@ https://grounded-ai-assistant-production.up.railway.app/ui
 > ⏱ May take ~20s to wake on first request (Railway free tier sleep mode)
 
 ![Demo Screenshot](https://raw.githubusercontent.com/DiyaMatthew/grounded-ai-assistant/main/demo.png)
-<img width="1920" height="1080" alt="Screenshot 2026-04-22 at 12 50 03" src="https://github.com/user-attachments/assets/82304ab3-4392-4834-a25c-a58522afed42" />
+
 
 
 ---
