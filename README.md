@@ -39,7 +39,22 @@ This is not a chatbot. It is a **production-pattern Retrieval-Augmented Generati
 | **Session memory** | Per-session conversation history for follow-up questions |
 
 ---
+## 💡 Why This Project Exists
 
+AI is moving extremely fast — new regulations, new research, and new 
+terminology every few months. Businesses and organisations, especially 
+in the UK, are struggling to keep up. Understanding things like the 
+UK's National AI Strategy, the pro-innovation approach to AI regulation, 
+or what a large language model actually is means digging through 
+government white papers and academic research papers — which takes time 
+and expertise most teams don't have.
+
+Grounded AI Assistant solves that by letting anyone ask a plain English 
+question and get an answer sourced directly from real UK Government 
+documents and arXiv research papers — with citations so you can verify 
+every claim. No hallucinations. No guesswork. Just grounded answers.
+
+---
 ## 🏗 Architecture
 
 ```
